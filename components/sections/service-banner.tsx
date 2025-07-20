@@ -11,8 +11,16 @@ interface ServiceBannerProps {
   features: string[]
   buttonText: string
   buttonLink: string
-  imageSrc: string
-  imageAlt: string
+  images: {
+    main: string
+    mainAlt: string
+    small1: string
+    small1Alt: string
+    small2: string
+    small2Alt: string
+    small3: string
+    small3Alt: string
+  }
   backgroundColor?: string
   reverse?: boolean
   icon?: React.ReactNode
@@ -25,8 +33,7 @@ export default function ServiceBanner({
   features,
   buttonText,
   buttonLink,
-  imageSrc,
-  imageAlt,
+  images,
   backgroundColor = "bg-white",
   reverse = false,
   icon
@@ -114,14 +121,14 @@ export default function ServiceBanner({
               
               {/* 4 Images in Square Grid */}
               <div className="grid grid-cols-2 gap-4">
-                {/* Image 1 */}
+                {/* Image 1 - Main Image */}
                 <div className="relative overflow-hidden shadow-lg" style={{
                       borderTopLeftRadius: '40px',
                       borderBottomRightRadius: '40px',
                     }}>
                   <img
-                    src={imageSrc}
-                    alt={`${imageAlt} - صورة 1`}
+                    src={images.main}
+                    alt={images.mainAlt}
                     className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
                     style={{
                       borderTopLeftRadius: '40px',
@@ -132,49 +139,58 @@ export default function ServiceBanner({
                   {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
                 </div>
                 
-                {/* Image 2 */}
+                {/* Image 2 - Small Image 1 */}
                 <div className="relative overflow-hidden shadow-lg" style={{
                       borderTopRightRadius: '40px',
                       borderBottomLeftRadius: '40px',
                     }}>
                   <img
-                    src={imageSrc}
-                    alt={`${imageAlt} - صورة 2`}
+                    src={images.small1}
+                    alt={images.small1Alt}
                     className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-              
+                    style={{
+                      borderTopRightRadius: '40px',
+                      borderBottomLeftRadius: '40px',
+                    }}
                   />
                   {/* Subtle Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 
-                {/* Image 3 */}
+                {/* Image 3 - Small Image 2 */}
                 <div className="relative overflow-hidden shadow-lg" style={{
                         borderTopRightRadius: '40px',
                         borderBottomLeftRadius: '40px',
                     }}>
                   <img
-                    src={imageSrc}
-                    alt={`${imageAlt} - صورة 3`}
+                    src={images.small2}
+                    alt={images.small2Alt}
                     className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-               
+                    style={{
+                      borderTopRightRadius: '40px',
+                      borderBottomLeftRadius: '40px',
+                    }}
                   />
                   {/* Subtle Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 
-                {/* Image 4 */}
+                {/* Image 4 - Small Image 3 */}
                 <div className="relative overflow-hidden shadow-lg" style={{
                             borderTopLeftRadius: '40px',
                             borderBottomRightRadius: '40px',
                     }}>
                   <img
-                    src={imageSrc}
-                    alt={`${imageAlt} - صورة 4`}
+                    src={images.small3}
+                    alt={images.small3Alt}
                     className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                
+                    style={{
+                      borderTopLeftRadius: '40px',
+                      borderBottomRightRadius: '40px',
+                    }}
                   />
                   {/* Subtle Overlay */}
-                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
               </div>
 

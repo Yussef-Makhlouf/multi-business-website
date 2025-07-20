@@ -18,12 +18,14 @@ export const servicesData = {
     buttonText: "اكتشف خدمات التكييف",
     buttonLink: "/hvac",
     images: {
-      main: "/bg1.png",
-      mainAlt: "فريق عمل محترف في اجتماع عمل",
-      small1: "/bg1.png",
-      small1Alt: "مناقشة عمل احترافية",
-      small2: "/bg1.png",
-      small2Alt: "تعاون الفريق في العمل"
+      main: "/maintain.jpg",
+      mainAlt: "صيانة وتركيب المكيفات المركزية",
+      small1: "/air4.jpg",
+      small1Alt: "أنظمة التكييف المتطورة",
+      small2: "/air2.jpg",
+      small2Alt: "فريق فنيين متخصصين",
+      small3: "/air3.jpg",
+      small3Alt: "صيانة دورية متخصصة"
     }
   },
   contracting: {
@@ -43,12 +45,14 @@ export const servicesData = {
     buttonText: "استكشف خدمات المقاولات",
     buttonLink: "/contracting",
     images: {
-      main: "/serv1.jpg",
-      mainAlt: "فريق عمل محترف في اجتماع عمل",
-      small1: "/serv1.jpg",
-      small1Alt: "مناقشة عمل احترافية",
-      small2: "/serv1.jpg",
-      small2Alt: "تعاون الفريق في العمل"
+      main: "/build.jpg",
+      mainAlt: "مشاريع البناء والتطوير العقاري",
+      small1: "/serv5.jpg",
+      small1Alt: "فريق عمل محترف في مجال المقاولات",
+      small2: "/serv6.jpg",
+      small2Alt: "مشاريع عقارية متطورة",
+      small3: "/serv7.jpg",
+      small3Alt: "مشاريع بناء متطورة"
     }
   },
   marketing: {
@@ -75,11 +79,13 @@ export const servicesData = {
     buttonLink: "/marketing",
     images: {
       main: "/bg1.png",
-      mainAlt: "فريق عمل محترف في اجتماع عمل",
-      small1: "/bg1.png",
-      small1Alt: "مناقشة عمل احترافية",
-      small2: "/bg1.png",
-      small2Alt: "تعاون الفريق في العمل"
+      mainAlt: "خدمات الدعاية والإعلان المتكاملة",
+      small1: "/art1.png",
+      small1Alt: "تصاميم إعلانية احترافية",
+      small2: "/art2.png",
+      small2Alt: "شاشات رقمية متطورة",
+      small3: "/art3.png",
+      small3Alt: "حلول إعلانية متطورة"
     }
   }
 }
@@ -91,7 +97,7 @@ export const bannerData = [
     description: "نضمن لكم أفضل أداء لأنظمة التكييف مع خدمات الصيانة الدورية والطوارئ على مدار الساعة",
     buttonText: "احجز صيانة دورية",
     buttonLink: "/hvac",
-    imageSrc: "/placeholder.svg?height=400&width=600&text=خدمات+التكييف+المتميزة",
+    imageSrc: "/air.jpg",
     imageAlt: "خدمات التكييف المتميزة",
     backgroundColor: "bg-white"
   },
@@ -101,7 +107,7 @@ export const bannerData = [
     description: "من التخطيط إلى التسليم، نحن نبني أحلامكم بأعلى معايير الجودة والاحترافية",
     buttonText: "استكشف مشاريعنا",
     buttonLink: "/contracting",
-    imageSrc: "/placeholder.svg?height=400&width=600&text=مشاريع+البناء+والتطوير",
+    imageSrc: "/build.jpg",
     imageAlt: "مشاريع البناء والتطوير",
     backgroundColor: "bg-[#f3f8fc]",
     reverse: true
@@ -112,7 +118,7 @@ export const bannerData = [
     description: "نقدم خدمات دعاية وإعلان متكاملة تشمل الطباعة والكلادينج واللافتات والشاشات الرقمية، مع ضمان الجودة العالية والأسعار المنافسة",
     buttonText: "استكشف خدمات الدعاية والإعلان",
     buttonLink: "/marketing",
-    imageSrc: "/placeholder.svg?height=400&width=600&text=خدمات+دعاية+وإعلان+متكاملة",
+    imageSrc: "/marketing.jpg",
     imageAlt: "خدمات دعاية وإعلان متكاملة",
     backgroundColor: "bg-white"
   }

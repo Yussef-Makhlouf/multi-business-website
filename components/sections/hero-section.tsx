@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Play, Star, CheckCircle, Phone, MessageCircle, Award, Users, Clock } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HeroSection() {
   return (
@@ -120,8 +121,8 @@ export default function HeroSection() {
               <div className="relative z-20 w-80 h-80 mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-full shadow-2xl animate-pulse"></div>
                 <div className="absolute inset-4 bg-white rounded-full flex items-center justify-center shadow-xl">
-                  <div className="w-32 h-32 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-6xl">ق</span>
+                  <div className="w-36 h-36 rounded-full flex items-center justify-center ">
+                    <Image src="/logov.png" alt="logo" width={32} height={32} className="w-full h-full object-contain"   />
                   </div>
                 </div>
               </div>

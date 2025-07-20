@@ -57,8 +57,8 @@ export default function HomePage() {
         backgroundColor="bg-white"
       /> */}
 
-      {/* HVAC Services Banner with Image Background */}
-      <ImageBanner
+      {/* HVAC Services Banner */}
+      <ServiceBanner
         icon={iconMap[servicesData.hvac.iconName as keyof typeof iconMap]}
         title={servicesData.hvac.title}
         subtitle={servicesData.hvac.subtitle}
@@ -66,9 +66,9 @@ export default function HomePage() {
         features={servicesData.hvac.features}
         buttonText={servicesData.hvac.buttonText}
         buttonLink={servicesData.hvac.buttonLink}
-        imageSrc={servicesData.hvac.images.main}
-        imageAlt={servicesData.hvac.images.mainAlt}
-        overlayColor="from-[#1375bd]/80 to-[#018bd2]/60"
+        images={servicesData.hvac.images}
+        backgroundColor="bg-white"
+        reverse={false}
       />
 
       {/* Modern Banner 1 */}
@@ -92,8 +92,7 @@ export default function HomePage() {
         features={servicesData.contracting.features}
         buttonText={servicesData.contracting.buttonText}
         buttonLink={servicesData.contracting.buttonLink}
-        imageSrc={servicesData.contracting.images.main}
-        imageAlt={servicesData.contracting.images.mainAlt}
+        images={servicesData.contracting.images}
         backgroundColor="bg-[#f3f8fc]"
         reverse={true}
       />
@@ -111,8 +110,8 @@ export default function HomePage() {
         reverse={bannerData[1].reverse}
       />
 
-      {/* Marketing & Advertising Banner with Image Background */}
-      <ImageBanner
+      {/* Marketing & Advertising Banner */}
+      <ServiceBanner
         icon={iconMap[servicesData.marketing.iconName as keyof typeof iconMap]}
         title={servicesData.marketing.title}
         subtitle={servicesData.marketing.subtitle}
@@ -120,9 +119,8 @@ export default function HomePage() {
         features={servicesData.marketing.features}
         buttonText={servicesData.marketing.buttonText}
         buttonLink={servicesData.marketing.buttonLink}
-        imageSrc={servicesData.marketing.images.main}
-        imageAlt={servicesData.marketing.images.mainAlt}
-        overlayColor="from-[#018bd2]/80 to-[#1375bd]/60"
+        images={servicesData.marketing.images}
+        backgroundColor="bg-[#f3f8fc]"
         reverse={true}
       />
 

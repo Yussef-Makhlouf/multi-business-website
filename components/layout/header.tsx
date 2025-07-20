@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, X, Phone } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -24,8 +25,8 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-reverse space-x-2 sm:space-x-3 group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-              <span className="text-white font-bold text-sm sm:text-base md:text-xl">ق</span>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform group-hover:scale-105">
+              <Image src="/logov.png" alt="logo" width={32} height={32} className="w-full h-full object-contain"   />
             </div>
             <div className="min-w-0 flex-1">
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-[#1375bd] group-hover:text-[#018bd2] transition-colors truncate">
@@ -73,8 +74,8 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   {/* Tablet Logo */}
                   <div className="flex items-center space-x-reverse space-x-3 mb-8">
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">ق</span>
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                      <Image src="/logov.png" alt="logo" width={32} height={32} className="w-full h-full object-contain"   />
                     </div>
                     <div>
                       <h2 className="text-xl font-bold text-[#1375bd]">القوس الماسي</h2>
@@ -131,8 +132,8 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   {/* Mobile Logo */}
                   <div className="flex items-center space-x-reverse space-x-3 mb-6">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">ق</span>
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                      <Image src="/logov.png" alt="logo" width={32} height={32} className="w-full h-full object-contain"   />
                     </div>
                     <div className="min-w-0 flex-1">
                       <h2 className="text-lg font-bold text-[#1375bd] truncate">القوس الماسي</h2>

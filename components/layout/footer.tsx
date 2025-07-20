@@ -1,73 +1,154 @@
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Separator } from "@/components/ui/separator"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-reverse space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">ق</span>
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-30" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }}></div>
+      
+      <div className="relative z-10">
+        <div className="container mx-auto px-4 py-16">
+          {/* Main Footer Content */}
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+            {/* Company Info */}
+            <div className="lg:col-span-1">
+              <div className="flex items-center space-x-reverse space-x-4 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#1375bd] via-[#018bd2] to-[#00a3ff] rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25">
+                  <span className="text-white font-bold text-lg">ق</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    القوس الماسي
+                  </h3>
+                  <p className="text-sm text-gray-400 font-medium">Al Qous Almasi</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold">القوس الماسي</h3>
-                <p className="text-sm text-gray-400">Al Qous Almasi</p>
+              <p className="text-gray-300 leading-relaxed mb-6 text-sm">
+                شريكك الموثوق في خدمات التكييف والمقاولات والتسويق في جدة والمملكة العربية السعودية. نقدم حلولاً شاملة ومبتكرة لجميع احتياجاتك.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <Badge className="bg-gradient-to-r from-[#1375bd] to-[#018bd2] hover:from-[#018bd2] hover:to-[#1375bd] transition-all duration-300 shadow-md">
+                  جودة مضمونة
+                </Badge>
+                <Badge className="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-600 transition-all duration-300 shadow-md">
+                  خدمة 24/7
+                </Badge>
               </div>
+              
+  
             </div>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              شريكك الموثوق في خدمات التكييف والمقاولات والتسويق في جدة والمملكة العربية السعودية
-            </p>
-            <div className="flex space-x-reverse space-x-4">
-              <Badge className="bg-[#1375bd]">جودة مضمونة</Badge>
-              <Badge className="bg-[#018bd2]">خدمة 24/7</Badge>
+
+            {/* HVAC Services */}
+            <div>
+              <div className="mb-6">
+                <div className="w-8 h-1 bg-gradient-to-r from-[#1375bd] to-[#018bd2] rounded-full mb-4"></div>
+                <h3 className="text-lg font-bold text-white mb-4">خدمات التكييف</h3>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "صيانة المكيفات المركزية",
+                  "تركيب أنظمة جديدة",
+                  "تنظيف وتعقيم شامل",
+                  "خدمة طوارئ فورية",
+                  "صيانة دورية مجدولة"
+                ].map((service, index) => (
+                  <li key={index} className="flex items-center space-x-reverse space-x-2 text-gray-300 hover:text-white transition-colors duration-200 group">
+                    <div className="w-1.5 h-1.5 bg-[#1375bd] rounded-full group-hover:bg-[#018bd2] transition-colors duration-200"></div>
+                    <span className="text-sm">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contracting & Real Estate */}
+            <div>
+              <div className="mb-6">
+                <div className="w-8 h-1 bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-full mb-4"></div>
+                <h3 className="text-lg font-bold text-white mb-4">المقاولات والعقارات</h3>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "البناء السكني والتجاري",
+                  "التطوير العقاري",
+                  "استشارات الاستثمار",
+                  "التسويق العقاري",
+                  "إدارة المشاريع"
+                ].map((service, index) => (
+                  <li key={index} className="flex items-center space-x-reverse space-x-2 text-gray-300 hover:text-white transition-colors duration-200 group">
+                    <div className="w-1.5 h-1.5 bg-emerald-600 rounded-full group-hover:bg-emerald-500 transition-colors duration-200"></div>
+                    <span className="text-sm">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Marketing & Advertising */}
+            <div>
+              <div className="mb-6">
+                <div className="w-8 h-1 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full mb-4"></div>
+                <h3 className="text-lg font-bold text-white mb-4">الإعلان والتسويق</h3>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "طباعة بنرات احترافية عالية الجودة",
+                  "كلادينج خارجي وداخلي متطور",
+                  "لافتات إعلانية جذابة",
+                  "حروف بارزة ثلاثية الأبعاد",
+                  "استيكرات مخصصة ومقاومة",
+                  "طباعة أوت دور وإن دور"
+                ].map((service, index) => (
+                  <li key={index} className="flex items-center space-x-reverse space-x-2 text-gray-300 hover:text-white transition-colors duration-200 group">
+                    <div className="w-1.5 h-1.5 bg-purple-600 rounded-full group-hover:bg-purple-500 transition-colors duration-200"></div>
+                    <span className="text-sm">{service}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-4">خدمات التكييف</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>صيانة المكيفات المركزية</li>
-              <li>تركيب أنظمة جديدة</li>
-              <li>تنظيف وتعقيم شامل</li>
-              <li>خدمة طوارئ فورية</li>
-            </ul>
-          </div>
+          {/* Contact & Social Section */}
+  
 
-          <div>
-            <h3 className="text-lg font-semibold mb-4">المقاولات والعقارات</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>البناء السكني والتجاري</li>
-              <li>التطوير العقاري</li>
-              <li>استشارات الاستثمار</li>
-              <li>التسويق العقاري</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">الإعلان والتسويق</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>التصميم الجرافيكي</li>
-              <li>الطباعة والإعلان</li>
-              <li>التسويق الرقمي</li>
-              <li>اللوحات الإعلانية</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-center md:text-right">&copy; 2024 القوس الماسي. جميع الحقوق محفوظة.</p>
-            <div className="flex space-x-reverse space-x-4 mt-4 md:mt-0">
-              <span className="text-gray-400">0559811925</span>
-              <span className="text-gray-400">•</span>
-              <span className="text-gray-400">0534363845</span>
-              <span className="text-gray-400">•</span>
-              <span className="text-gray-400">0562939917</span>
+          {/* Bottom Section */}
+          <Separator className="bg-gray-700" />
+          <div className="flex flex-col md:flex-row justify-between items-center pt-8">
+            <div className="text-center md:text-right mb-4 md:mb-0">
+              <p className="text-gray-400 text-sm">
+                &copy; 2024 القوس الماسي. جميع الحقوق محفوظة.
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                مصمم و مطور بأحدث التقنيات بواسطة <a href="https://goldenmoonads.com" target="_blank" className="text-white font-bold">القمر الذهبي</a>
+              </p>
+            </div>
+            
+            <div className="flex items-center space-x-reverse space-x-6">
+              <div className="flex space-x-reverse space-x-4">
+                {[
+                  { number: "0559811925", color: "from-[#1375bd] to-[#018bd2]" },
+                  { number: "0534363845", color: "from-emerald-600 to-emerald-500" },
+                  { number: "0562939917", color: "from-purple-600 to-purple-500" }
+                ].map((phone, index) => (
+                  <a
+                    key={index}
+                    href={`tel:${phone.number}`}
+                    className="flex items-center space-x-reverse space-x-2 group focus:outline-none focus:ring-2 focus:ring-[#1375bd] rounded transition"
+                  >
+                  <div key={index} className="flex items-center space-x-reverse space-x-2">
+                    <div className={`w-2 h-2 bg-gradient-to-r ${phone.color} rounded-full`}></div>
+                    <span className="text-gray-400 text-sm font-medium">{phone.number}</span>
+                  </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
   )
-} 
+}
