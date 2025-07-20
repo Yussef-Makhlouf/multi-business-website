@@ -49,7 +49,7 @@ export default function ModernBanner({
             <Image
               src={imageSrc || "/placeholder.svg"}
               alt={imageAlt}
-              width={600}
+              width={300}
               height={400}
               className="w-full h-80 object-cover shadow-lg shadow-gray-200"
               style={{

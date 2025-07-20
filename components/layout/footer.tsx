@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -18,15 +19,10 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-reverse space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#1375bd] via-[#018bd2] to-[#00a3ff] rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25">
-                  <span className="text-white font-bold text-lg">ق</span>
+                <div className="w-18 h-16  rounded-xl flex items-center justify-center ">
+                  <Image src="/logoh.png" alt="logo" width={34} height={34} className="w-full h-full object-contain"   />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                    القوس الماسي
-                  </h3>
-                  <p className="text-sm text-gray-400 font-medium">Al Qous Almasi</p>
-                </div>
+          
               </div>
               <p className="text-gray-300 leading-relaxed mb-6 text-sm">
                 شريكك الموثوق في خدمات التكييف والمقاولات والتسويق في جدة والمملكة العربية السعودية. نقدم حلولاً شاملة ومبتكرة لجميع احتياجاتك.
