@@ -137,7 +137,7 @@ export default function HomePage() {
       />
 
       {/* Masonry Gallery Section */}
-      <section className="py-20 bg-[#f3f8fc]">
+      {/* <section className="py-20 bg-[#f3f8fc]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1375bd] mb-4">معرض أعمالنا المتميزة</h2>
@@ -158,17 +158,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* Success Partners */}
-      {/* <SuccessPartners /> */}
-
-      {/* Why Choose Us */}
-      <WhyChooseUsSection />
-
-      {/* FAQ Section */}
-      <FAQSection />
-     {/* Featured Banner */}
+      </section> */}
      <FeaturedBanner
         icon={<Star className="w-10 h-10 text-white" />}
         title="القوس الماسي"
@@ -184,6 +174,16 @@ export default function HomePage() {
         buttonLink="/contact"
         backgroundColor="bg-gradient-to-br from-[#1375bd] to-[#018bd2]"
       />
+      {/* Success Partners */}
+      {/* <SuccessPartners /> */}
+
+      {/* Why Choose Us */}
+      <WhyChooseUsSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
+     {/* Featured Banner */}
+
       {/* Contact & Social Media Section */}
       <ContactSocialSection />
 

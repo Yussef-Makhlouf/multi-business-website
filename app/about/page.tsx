@@ -4,43 +4,14 @@ import { Target, Eye, Award, Users, Shield } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import FloatingButtons from "@/components/floating-buttons"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#f3f8fc]" dir="rtl">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b sticky top-0 z-40">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-reverse space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">ق</span>
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-[#1375bd]">القوس الماسي</h1>
-                <p className="text-sm text-gray-600">Al Qous Almasi</p>
-              </div>
-            </Link>
-            <div className="hidden md:flex items-center space-x-reverse space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                الرئيسية
-              </Link>
-              <Link href="/hvac" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                خدمات التكييف
-              </Link>
-              <Link href="/contracting" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                المقاولات والعقارات
-              </Link>
-              <Link href="/marketing" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                الإعلان والتسويق
-              </Link>
-              <Link href="/contact">
-                <Button className="bg-[#018bd2] hover:bg-[#1375bd]">تواصل معنا</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+<Header />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#f3f8fc] to-white">
@@ -255,74 +226,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-reverse space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">ق</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">القوس الماسي</h3>
-                  <p className="text-sm text-gray-400">Al Qous Almasi</p>
-                </div>
-              </div>
-              <p className="text-gray-400 leading-relaxed">شريكك الموثوق في خدمات التكييف والمقاولات والتسويق</p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدماتنا</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>صيانة المكيفات المركزية</li>
-                <li>المقاولات والعقارات</li>
-                <li>الإعلان والتسويق</li>
-                <li>استشارات متخصصة</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">روابط سريعة</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/" className="hover:text-white">
-                    الرئيسية
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-white">
-                    من نحن
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/portfolio" className="hover:text-white">
-                    أعمالنا
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-white">
-                    تواصل معنا
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">معلومات التواصل</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>0559811925</li>
-                <li>0534363845</li>
-                <li>0562939917</li>
-                <li>جدة، المملكة العربية السعودية</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 القوس الماسي. جميع الحقوق محفوظة.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
 
       <FloatingButtons />
     </div>
