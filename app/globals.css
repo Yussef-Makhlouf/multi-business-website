@@ -55,8 +55,36 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-cairo), "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    /* font-family: var(--font-cairo), "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif; */
+    font-family: 'Lama Sans', sans-serif;
   }
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/font/LamaSans-Black.woff2') format('woff2'),
+       url('/font/LamaSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/font/LamaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/font/LamaSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.lama-sans-font {
+  font-family: 'Lama Sans', 'Cairo', sans-serif;
 }
 
 /* Custom scrollbar */

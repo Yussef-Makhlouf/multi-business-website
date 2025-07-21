@@ -36,7 +36,7 @@ export default function HeroSection() {
 
             {/* Main Heading */}
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-relaxed text-center">
+              <h1 className="text-5xl lg:text-7xl font-bold leading-relaxed ">
                 <span className="text-gray-900 leading-relaxed ">القوس الماسي</span>
                 <br />
                 <span className="bg-gradient-to-r from-[#1375bd] to-[#018bd2] bg-clip-text text-transparent">

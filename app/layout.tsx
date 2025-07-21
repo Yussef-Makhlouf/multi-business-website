@@ -4,7 +4,7 @@ import "./globals.css"
 import { Cairo } from "next/font/google"
 
 const cairo = Cairo({
-  subsets: ["arabic", "latin"],
+  subsets: ["arabic"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 })
@@ -30,11 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
+      <link rel="preload" href="/font/LamaSans-Black.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      <link rel="preload" href="/font/LamaSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      <link rel="preload" href="/font/LamaSans-SemiBold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={cairo.className}>{children}</body>
+      <body className="lama-sans-font">{children}</body>
     </html>
   )
 }
