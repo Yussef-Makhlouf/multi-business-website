@@ -123,6 +123,17 @@ export default function ContactSocialSection() {
                 </CardContent>
                 </Link>
               </Card>
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
+              <Link href="https://x.com/alqawsco" target="_blank">
+                <CardContent className="p-6 text-center">
+                  
+                  {/* <Twitter className="w-12 h-12 text-pink-600 mx-auto mb-3 group-hover:scale-110 transition-transform" /> */}
+                 <Image src="/twitter.jpg" alt="twitter" width={48} height={48} className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                  <h4 className="font-semibold text-gray-700">تويتر</h4>
+                  <p className="text-sm text-gray-500 mt-1">تابعنا على تويتر</p>
+                </CardContent>
+                </Link>
+              </Card>
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
               <Link href="https://www.tiktok.com/@alqawsco?fbclid=IwY2xjawLodMlleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR78lWQyDXCEU30A5wgNYaXRcT51wBlsNr2GeRSJzU4BJCFV0u4QY2Rh39L6Kg_aem_CYo2PiK8c9bJVK0wFOFusA" target="_blank">
