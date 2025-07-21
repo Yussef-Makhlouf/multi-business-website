@@ -19,9 +19,7 @@ export default function HeroSection() {
       <div className="absolute top-32 left-20 animate-bounce">
         <div className="w-4 h-4 bg-[#1375bd] rounded-full"></div>
       </div>
-      <div className="absolute top-64 right-32 animate-bounce delay-1000">
-        <div className="w-6 h-6 bg-[#018bd2] rounded-full"></div>
-      </div>
+
       <div className="absolute bottom-32 left-1/4 animate-bounce delay-500">
         <div className="w-3 h-3 bg-[#1375bd] rounded-full"></div>
       </div>
@@ -38,8 +36,8 @@ export default function HeroSection() {
 
             {/* Main Heading */}
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-gray-900">القوس الماسي</span>
+              <h1 className="text-5xl lg:text-7xl font-bold leading-relaxed text-center">
+                <span className="text-gray-900 leading-relaxed ">القوس الماسي</span>
                 <br />
                 <span className="bg-gradient-to-r from-[#1375bd] to-[#018bd2] bg-clip-text text-transparent">
                   شريكك الموثوق
