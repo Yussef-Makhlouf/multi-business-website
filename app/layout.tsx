@@ -17,8 +17,11 @@ export const metadata: Metadata = {
   authors: [{ name: "القوس الماسي" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/logoh.png",
+  },
 }
+
 
 export default function RootLayout({
   children,

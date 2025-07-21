@@ -2,7 +2,9 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, MessageCircle, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { Phone, MessageCircle, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function ContactSocialSection() {
   const phoneNumbers = ["0559811925", "0534363845", "0562939917"]
@@ -100,7 +102,9 @@ export default function ContactSocialSection() {
             <div className="grid grid-cols-2 gap-4">
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6 text-center">
+                  <Link href="https://www.facebook.com/profile.php?id=61578166932512" target="_blank">
                   <Facebook className="w-12 h-12 text-blue-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                  </Link>
                   <h4 className="font-semibold text-gray-700">فيسبوك</h4>
                   <p className="text-sm text-gray-500 mt-1">تابع أحدث أعمالنا</p>
                 </CardContent>
@@ -108,7 +112,9 @@ export default function ContactSocialSection() {
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6 text-center">
+                  <Link href="https://www.instagram.com/alqawsco?fbclid=IwY2xjawLodQpleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR7Nedp3jv5_J2PU8-8m7cW4GshjqJwLYtMMYUkR_Y6WIjzcqlzCyIEehW6UEA_aem_DkAakpPArmRPIuiD4ybPvA" target="_blank">
                   <Instagram className="w-12 h-12 text-pink-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                  </Link>
                   <h4 className="font-semibold text-gray-700">إنستغرام</h4>
                   <p className="text-sm text-gray-500 mt-1">صور مشاريعنا</p>
                 </CardContent>
@@ -116,16 +122,33 @@ export default function ContactSocialSection() {
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6 text-center">
-                  <Linkedin className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-semibold text-gray-700">لينكد إن</h4>
-                  <p className="text-sm text-gray-500 mt-1">شبكة الأعمال</p>
+                  <Link href="https://www.tiktok.com/@alqawsco?fbclid=IwY2xjawLodMlleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR78lWQyDXCEU30A5wgNYaXRcT51wBlsNr2GeRSJzU4BJCFV0u4QY2Rh39L6Kg_aem_CYo2PiK8c9bJVK0wFOFusA" target="_blank">
+                  <svg
+                    className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <rect width="48" height="48" rx="12" fill="white" />
+                      <path
+                        d="M32.5 17.5c-1.7 0-3.1-1.4-3.1-3.1V12h-4.1v18.2c0 2.1-1.7 3.8-3.8 3.8s-3.8-1.7-3.8-3.8 1.7-3.8 3.8-3.8c.3 0 .6 0 .9.1v-4.2c-.3 0-.6-.1-.9-.1-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8V23c1.1.7 2.4 1.1 3.8 1.1h1.1v-4.1h-1.1z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                  </Link>
+                  <h4 className="font-semibold text-gray-700">تيك توك</h4>
+                  <p className="text-sm text-gray-500 mt-1">آخر الأخبار</p>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6 text-center">
-                  <Twitter className="w-12 h-12 text-blue-400 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-semibold text-gray-700">تويتر</h4>
+                  <Link href="https://www.snapchat.com/add/alqawsco?share_id=sg6qwmdMzbc&locale=ar-EG" target="_blank">
+                <Image src="/snapchat.svg" alt="snapchat" width={48} height={48} className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                  </Link>
+                  <h4 className="font-semibold text-gray-700">سناب شات</h4>
                   <p className="text-sm text-gray-500 mt-1">آخر الأخبار</p>
                 </CardContent>
               </Card>

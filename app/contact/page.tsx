@@ -82,9 +82,7 @@ export default function ContactPage() {
                 {/* WhatsApp */}
                 <div className="flex items-center justify-between p-6 bg-green-50 rounded-xl hover:bg-green-100 transition-colors">
                   <div className="flex items-center space-x-reverse space-x-4">
-                    <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
-                      <MessageCircle className="w-6 h-6 text-white" />
-                    </div>
+                
                     <div>
                       <h3 className="font-semibold text-gray-700 text-lg">واتساب</h3>
                       <p className="text-gray-600">تواصل مباشر وسريع</p>
@@ -93,7 +91,7 @@ export default function ContactPage() {
                   <Link
                     href="https://wa.me/966559811925?text=مرحباً، أود الاستفسار عن خدماتكم"
                     target="_blank"
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    className="bg-green-600 hover:bg-green-700 text-white px-3 py-3 rounded-lg font-semibold transition-colors"
                   >
                     تواصل عبر واتساب
                   </Link>
@@ -102,9 +100,7 @@ export default function ContactPage() {
                 {/* Phone Call */}
                 <div className="flex items-center justify-between p-6 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
                   <div className="flex items-center space-x-reverse space-x-4">
-                    <div className="w-12 h-12 bg-[#1375bd] rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
+          
                     <div>
                       <h3 className="font-semibold text-gray-700 text-lg">اتصال مباشر</h3>
                       <p className="text-gray-600">اتصل بنا الآن</p>
@@ -119,7 +115,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-center justify-between p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                {/* <div className="flex items-center justify-between p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
                   <div className="flex items-center space-x-reverse space-x-4">
                     <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
                       <Mail className="w-6 h-6 text-white" />
@@ -135,14 +131,12 @@ export default function ContactPage() {
                   >
                     أرسل بريد إلكتروني
                   </Link>
-                </div>
+                </div> */}
 
                 {/* Social Media */}
                 <div className="flex items-center justify-between p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl hover:from-purple-100 hover:to-pink-100 transition-colors">
                   <div className="flex items-center space-x-reverse space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
-                      <Instagram className="w-6 h-6 text-white" />
-                    </div>
+               
                     <div>
                       <h3 className="font-semibold text-gray-700 text-lg">وسائل التواصل الاجتماعي</h3>
                       <p className="text-gray-600">تابعنا على إنستغرام وفيسبوك</p>
@@ -150,16 +144,18 @@ export default function ContactPage() {
                   </div>
                   <div className="flex space-x-reverse space-x-2">
                     <Link
-                      href="#"
+                      href="https://www.instagram.com/alqawsco?fbclid=IwY2xjawLodQpleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR7Nedp3jv5_J2PU8-8m7cW4GshjqJwLYtMMYUkR_Y6WIjzcqlzCyIEehW6UEA_aem_DkAakpPArmRPIuiD4ybPvA"
                       className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors"
                     >
                       <Instagram className="w-5 h-5" />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.facebook.com/profile.php?id=61578166932512"
                       className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors"
                     >
+                      
                       <Facebook className="w-5 h-5" />
+                  
                     </Link>
                   </div>
                 </div>
@@ -194,23 +190,7 @@ export default function ContactPage() {
               </Card>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="mt-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-[#1375bd] text-center">موقعنا على الخريطة</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-12 h-12 text-[#1375bd] mx-auto mb-2" />
-                      <p className="text-gray-600">جدة، المملكة العربية السعودية</p>
-                      <p className="text-sm text-gray-500 mt-2">خريطة تفاعلية قريباً</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+        
           </div>
         </div>
       </section>
