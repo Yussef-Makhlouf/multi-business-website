@@ -263,32 +263,27 @@ export default function HVACPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="flex items-center justify-center space-x-reverse space-x-3">
-              <Phone className="w-6 h-6 text-white" />
+           
               <div className="text-center">
                 <div className="text-white text-lg font-semibold">خط الطوارئ</div>
-                <div className="text-blue-100">+966 12 123 تكييف</div>
+                <div className="text-blue-100">0559811925</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-reverse space-x-3">
-              <Mail className="w-6 h-6 text-white" />
+           
               <div className="text-center">
                 <div className="text-white text-lg font-semibold">طلبات الخدمة</div>
-                <div className="text-blue-100">hvac@integrated-solutions.sa</div>
+                <div className="text-blue-100">info@alqawsco.com</div>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/contact">
             <Button size="lg" className="bg-white text-[#1375bd] hover:bg-gray-100 text-lg px-8">
-              احجز خدمة الآن
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#1375bd] text-lg px-8 bg-transparent"
-            >
-              احصل على تقدير مجاني
-            </Button>
+              تواصل معنا
+            </Button></Link>
+           
           </div>
         </div>
       </section>

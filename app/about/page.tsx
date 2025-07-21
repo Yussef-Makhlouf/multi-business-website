@@ -212,7 +212,7 @@ export default function AboutPage() {
                 تواصل معنا الآن
               </Button>
             </Link>
-            <Link href="/portfolio">
+            {/* <Link href="/portfolio">
               <Button
                 size="lg"
                 variant="outline"
@@ -220,7 +220,7 @@ export default function AboutPage() {
               >
                 اطلع على أعمالنا
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

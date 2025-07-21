@@ -275,32 +275,26 @@ export default function MarketingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 mb-8 sm:mb-12">
             <div className="flex items-center justify-center space-x-reverse space-x-2 sm:space-x-3">
-              <Phone className="w-6 h-6 text-white" />
               <div className="text-center">
                 <div className="text-white text-base sm:text-lg font-semibold">استشارة إعلانية</div>
-                <div className="text-blue-100 text-sm sm:text-base">+966 12 123 نمو</div>
+                <div className="text-blue-100 text-sm sm:text-base">0559811925</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-reverse space-x-2 sm:space-x-3">
-              <Mail className="w-6 h-6 text-white" />
               <div className="text-center">
                 <div className="text-white text-base sm:text-lg font-semibold">استفسارات الدعاية والإعلان</div>
-                <div className="text-blue-100 text-sm sm:text-base">marketing@integrated-solutions.sa</div>
+                <div className="text-blue-100 text-sm sm:text-base">info@alqawsco.com</div>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link href="/contact">
             <Button size="lg" className="bg-white text-[#1375bd] hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-3">
-              احصل على عرض سعر
+              تواصل معنا
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#1375bd] text-base sm:text-lg px-6 sm:px-8 py-3 bg-transparent"
-            >
-              استشارة مجانية
-            </Button>
+            </Link>
+           
           </div>
         </div>
       </section>
