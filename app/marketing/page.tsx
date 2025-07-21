@@ -4,35 +4,14 @@ import { Phone, Mail, CheckCircle, Megaphone, Target, Users, BarChart, Globe } f
 import Link from "next/link"
 import Image from "next/image"
 import ServiceHero from "@/components/service-hero"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 export default function MarketingPage() {
   return (
     <div className="min-h-screen bg-[#f3f8fc]" dir="rtl">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-reverse space-x-2">
-              <div className="w-10 h-10 bg-[#1375bd] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">ش</span>
-              </div>
-              <span className="text-2xl font-bold text-[#1375bd]">شركة الحلول المتكاملة</span>
-            </Link>
-            <div className="hidden md:flex items-center space-x-reverse space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                الرئيسية
-              </Link>
-              <Link href="/hvac" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                خدمات التكييف
-              </Link>
-              <Link href="/contracting" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                المقاولات والعقارات
-              </Link>
-              <Button className="bg-[#018bd2] hover:bg-[#1375bd]">تواصل معنا</Button>
-            </div>
-          </nav>
-        </div>
-      </header>
+<Header/>
 
       {/* Hero Section */}
       <ServiceHero
@@ -43,22 +22,22 @@ export default function MarketingPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="احصل على عرض سعر"
         secondaryButtonLink="/contact"
-        imageSrc="/placeholder.svg?height=500&width=600&text=خدمات+دعاية+وإعلان+متكاملة+وشاشات+رقمية"
+        imageSrc="/market.jpg"
         imageAlt="خدمات دعاية وإعلان متكاملة وشاشات رقمية"
         badges={["طباعة احترافية", "كلادينج متطور", "شاشات رقمية", "أسعار منافسة"]}
       />
 
       {/* Services Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1375bd] mb-4">خدمات الدعاية والإعلان</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+      <section className="py-10 sm:py-20">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-4xl font-bold text-[#1375bd] mb-3 sm:mb-4">خدمات الدعاية والإعلان</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               حلول إعلانية شاملة تشمل الطباعة والكلادينج واللافتات والشاشات الرقمية بجودة عالية وأسعار منافسة
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 ">
             {/* Professional Printing */}
             <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
@@ -69,11 +48,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=طباعة+بنرات+احترافية+عالية+الجودة"
+                  src="/market2.jpg"
                   alt="طباعة بنرات احترافية عالية الجودة"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -106,11 +85,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=كلادينج+خارجي+وداخلي+متطور"
+                  src="/market3.jpg"
                   alt="خدمات كلادينج خارجي وداخلي متطور"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -143,11 +122,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=شاشات+رقمية+متطورة+في+المستشفيات"
+                  src="/market4.jpg"
                   alt="شاشات رقمية متطورة في المستشفيات والمراكز الطبية"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -180,11 +159,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=لافتات+إعلانية+جذابة+ومبتكرة"
+                  src="/market5.jpg"
                   alt="لافتات إعلانية جذابة ومبتكرة"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -217,11 +196,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=حروف+بارزة+ثلاثية+الأبعاد+احترافية"
+                  src="/market6.jpg"
                   alt="حروف بارزة ثلاثية الأبعاد احترافية"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -254,11 +233,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=استيكرات+مخصصة+ومقاومة+عالية+الجودة"
+                    src="/market7.jpg"
                   alt="استيكرات مخصصة ومقاومة عالية الجودة"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
@@ -284,91 +263,41 @@ export default function MarketingPage() {
         </div>
       </section>
 
-      {/* Success Stories */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1375bd] mb-4">مشاريعنا الناجحة</h2>
-            <p className="text-xl text-gray-600">نتائج حقيقية من مشاريع الدعاية والإعلان والشاشات الرقمية</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card>
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <div className="text-4xl font-bold text-[#1375bd] mb-2">+50</div>
-                  <div className="text-lg font-semibold text-gray-700">شاشة رقمية في المستشفيات</div>
-                </div>
-                <p className="text-gray-600 text-center">
-                  تركيب وإدارة 50 شاشة LED متطورة في مستشفى كبير بجدة لعرض المعلومات الطبية والإعلانات التفاعلية
-                  مع إدارة محتوى ذكية
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <div className="text-4xl font-bold text-[#1375bd] mb-2">+200</div>
-                  <div className="text-lg font-semibold text-gray-700">مشروع كلادينج وطباعة</div>
-                </div>
-                <p className="text-gray-600 text-center">
-                  تنفيذ أكثر من 200 مشروع كلادينج خارجي وداخلي مع خدمات طباعة احترافية عالية الجودة لشركات ومحلات
-                  في جميع أنحاء المملكة
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <div className="text-4xl font-bold text-[#1375bd] mb-2">%100</div>
-                  <div className="text-lg font-semibold text-gray-700">رضا العملاء</div>
-                </div>
-                <p className="text-gray-600 text-center">
-                  تحقيق معدل رضا 100% من العملاء من خلال تقديم خدمات دعاية وإعلان عالية الجودة بأسعار منافسة
-                  وضمان الجودة في جميع مشاريعنا
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-[#1375bd]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">مستعدون لتنفيذ مشاريعكم الإعلانية؟</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+      <section className="py-10 sm:py-20 bg-[#1375bd]">
+        <div className="container mx-auto px-2 sm:px-4 text-center">
+          <h2 className="text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">مستعدون لتنفيذ مشاريعكم الإعلانية؟</h2>
+          <p className="text-base sm:text-xl text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
             دعونا ننفذ مشاريع دعاية وإعلان احترافية تحقق أهدافكم. تواصلوا معنا اليوم للحصول على عرض سعر مجاني
             واستشارة متخصصة
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="flex items-center justify-center space-x-reverse space-x-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 mb-8 sm:mb-12">
+            <div className="flex items-center justify-center space-x-reverse space-x-2 sm:space-x-3">
               <Phone className="w-6 h-6 text-white" />
               <div className="text-center">
-                <div className="text-white text-lg font-semibold">استشارة إعلانية</div>
-                <div className="text-blue-100">+966 12 123 نمو</div>
+                <div className="text-white text-base sm:text-lg font-semibold">استشارة إعلانية</div>
+                <div className="text-blue-100 text-sm sm:text-base">+966 12 123 نمو</div>
               </div>
             </div>
-            <div className="flex items-center justify-center space-x-reverse space-x-3">
+            <div className="flex items-center justify-center space-x-reverse space-x-2 sm:space-x-3">
               <Mail className="w-6 h-6 text-white" />
               <div className="text-center">
-                <div className="text-white text-lg font-semibold">استفسارات الدعاية والإعلان</div>
-                <div className="text-blue-100">marketing@integrated-solutions.sa</div>
+                <div className="text-white text-base sm:text-lg font-semibold">استفسارات الدعاية والإعلان</div>
+                <div className="text-blue-100 text-sm sm:text-base">marketing@integrated-solutions.sa</div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#1375bd] hover:bg-gray-100 text-lg px-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button size="lg" className="bg-white text-[#1375bd] hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-3">
               احصل على عرض سعر
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#1375bd] text-lg px-8 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-[#1375bd] text-base sm:text-lg px-6 sm:px-8 py-3 bg-transparent"
             >
               استشارة مجانية
             </Button>
@@ -376,61 +305,8 @@ export default function MarketingPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <Link href="/" className="flex items-center space-x-reverse space-x-2 mb-4">
-                <div className="w-8 h-8 bg-[#1375bd] rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">ش</span>
-                </div>
-                <span className="text-xl font-bold">شركة الحلول المتكاملة</span>
-              </Link>
-              <p className="text-gray-400 leading-relaxed">خدمات دعاية وإعلان متكاملة بجودة عالية وأسعار منافسة</p>
-            </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات الدعاية والإعلان</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>طباعة احترافية</li>
-                <li>كلادينج خارجي وداخلي</li>
-                <li>شاشات رقمية</li>
-                <li>لافتات إعلانية</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات أخرى</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/hvac" className="hover:text-white">
-                    خدمات التكييف
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contracting" className="hover:text-white">
-                    المقاولات والعقارات
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">معلومات التواصل</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>+966 12 123 نمو</li>
-                <li>marketing@integrated-solutions.sa</li>
-                <li>تدقيق تسويقي مجاني</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 شركة الحلول المتكاملة. جميع الحقوق محفوظة.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

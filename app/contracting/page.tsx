@@ -5,12 +5,17 @@ import { Phone, Mail, CheckCircle, Home, Building, TrendingUp, Users, Award, Clo
 import Link from "next/link"
 import Image from "next/image"
 import ServiceHero from "@/components/service-hero"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 export default function ContractingPage() {
   return (
+
+
     <div className="min-h-screen bg-[#f3f8fc]" dir="rtl">
+          <Header/>
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      {/* <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-reverse space-x-2">
@@ -33,7 +38,7 @@ export default function ContractingPage() {
             </div>
           </nav>
         </div>
-      </header>
+      </header> */}
 
       {/* Hero Section */}
       <ServiceHero
@@ -44,7 +49,7 @@ export default function ContractingPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="استشارة استثمارية"
         secondaryButtonLink="/contact"
-        imageSrc="/placeholder.svg?height=500&width=600&text=مشاريع+البناء+والتطوير+العقاري"
+        imageSrc="/build.jpg"
         imageAlt="مشاريع البناء والتطوير العقاري"
         badges={["مرخص ومضمون", "تسليم في الوقت", "جودة عالية", "خبرة 10+ سنوات"]}
       />
@@ -70,7 +75,7 @@ export default function ContractingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=مشاريع+البناء+السكني"
+                  src="/estate2.jpg"
                   alt="مشاريع البناء السكني وبناء المنازل"
                   width={400}
                   height={200}
@@ -107,7 +112,7 @@ export default function ContractingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=بناء+المباني+التجارية"
+                  src="/pro6.jpg"
                   alt="مشاريع بناء المباني التجارية"
                   width={400}
                   height={200}
@@ -144,7 +149,7 @@ export default function ContractingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=استشارات+الاستثمار+العقاري"
+                  src="/estate.jpg"
                   alt="خدمات الاستثمار العقاري والاستشارات"
                   width={400}
                   height={200}
@@ -176,7 +181,7 @@ export default function ContractingPage() {
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1375bd] mb-4">لماذا تختار خدمات البناء والعقارات لدينا؟</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -184,7 +189,7 @@ export default function ContractingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-[#f3f8fc] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-10 h-10 text-[#1375bd]" />
@@ -221,7 +226,7 @@ export default function ContractingPage() {
       </section>
 
       {/* Project Portfolio */}
-      <section className="py-20 bg-[#f3f8fc]">
+      {/* <section className="py-20 bg-[#f3f8fc]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1375bd] mb-4">المشاريع الحديثة</h2>
@@ -232,7 +237,7 @@ export default function ContractingPage() {
             <Card>
               <CardContent className="p-0">
                 <Image
-                  src="/placeholder.svg?height=250&width=400&text=مجمع+سكني+فاخر"
+                    src="/pro1.jpg"
                   alt="مشروع مجمع سكني فاخر"
                   width={400}
                   height={250}
@@ -251,7 +256,7 @@ export default function ContractingPage() {
             <Card>
               <CardContent className="p-0">
                 <Image
-                  src="/placeholder.svg?height=250&width=400&text=مبنى+إداري+تجاري"
+                  src="/pro2.jpg"
                   alt="بناء مبنى إداري تجاري"
                   width={400}
                   height={250}
@@ -268,7 +273,7 @@ export default function ContractingPage() {
             <Card>
               <CardContent className="p-0">
                 <Image
-                  src="/placeholder.svg?height=250&width=400&text=ترميم+منزل+تراثي"
+                  src="/pro3.jpg"
                   alt="مشروع ترميم منزل تراثي"
                   width={400}
                   height={250}
@@ -283,7 +288,7 @@ export default function ContractingPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="py-20 bg-[#1375bd]">
@@ -326,60 +331,7 @@ export default function ContractingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <Link href="/" className="flex items-center space-x-reverse space-x-2 mb-4">
-                <div className="w-8 h-8 bg-[#1375bd] rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">ش</span>
-                </div>
-                <span className="text-xl font-bold">شركة الحلول المتكاملة</span>
-              </Link>
-              <p className="text-gray-400 leading-relaxed">بناء التميز في المقاولات والتطوير العقاري</p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات البناء</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>البناء السكني</li>
-                <li>البناء التجاري</li>
-                <li>التجديدات</li>
-                <li>التطوير العقاري</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات أخرى</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/hvac" className="hover:text-white">
-                    خدمات التكييف
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/marketing" className="hover:text-white">
-                    الإعلان والتسويق
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">معلومات التواصل</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>+966 12 123 بناء</li>
-                <li>projects@integrated-solutions.sa</li>
-                <li>مرخص ومضمون</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 شركة الحلول المتكاملة. جميع الحقوق محفوظة.</p>
-          </div>
-        </div>
-      </footer>
+<Footer/>
     </div>
   )
 }

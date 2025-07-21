@@ -16,7 +16,7 @@ export default function Header() {
     { href: "/contracting", label: "المقاولات والعقارات" },
     { href: "/marketing", label: "الإعلان والتسويق" },
     { href: "/about", label: "من نحن" },
-    { href: "/portfolio", label: "أعمالنا" },
+    // { href: "/portfolio", label: "أعمالنا" },
   ]
 
   return (

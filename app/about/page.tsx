@@ -73,11 +73,11 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=600&text=فريق+القوس+الماسي"
+                src="/logov.png"
                 alt="فريق عمل القوس الماسي"
                 width={600}
                 height={500}
-                className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                className="w-full h-96 object-contain rounded-2xl shadow-lg"
               />
             </div>
           </div>

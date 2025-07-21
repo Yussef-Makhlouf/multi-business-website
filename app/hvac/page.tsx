@@ -4,35 +4,14 @@ import { Phone, Mail, CheckCircle, Wind, Thermometer, Shield, Clock, Star } from
 import Link from "next/link"
 import Image from "next/image"
 import ServiceHero from "@/components/service-hero"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 export default function HVACPage() {
   return (
     <div className="min-h-screen bg-[#f3f8fc]" dir="rtl">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-reverse space-x-2">
-              <div className="w-10 h-10 bg-[#1375bd] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">ش</span>
-              </div>
-              <span className="text-2xl font-bold text-[#1375bd]">شركة الحلول المتكاملة</span>
-            </Link>
-            <div className="hidden md:flex items-center space-x-reverse space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                الرئيسية
-              </Link>
-              <Link href="/contracting" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                المقاولات والعقارات
-              </Link>
-              <Link href="/marketing" className="text-gray-700 hover:text-[#1375bd] transition-colors">
-                الإعلان والتسويق
-              </Link>
-              <Button className="bg-[#018bd2] hover:bg-[#1375bd]">تواصل معنا</Button>
-            </div>
-          </nav>
-        </div>
-      </header>
+ <Header/>
 
       {/* Hero Section */}
       <ServiceHero
@@ -43,7 +22,7 @@ export default function HVACPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="خدمة طوارئ"
         secondaryButtonLink="/contact"
-        imageSrc="/placeholder.svg?height=500&width=600&text=فني+تكييف+محترف+يعمل+على+وحدة+التكييف"
+        imageSrc="/air.jpg"
         imageAlt="فني تكييف محترف يعمل على وحدة التكييف المركزي"
         badges={["خدمة 24/7", "فنيون معتمدون", "ضمان شامل", "أسعار تنافسية"]}
       />
@@ -70,7 +49,7 @@ export default function HVACPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=صيانة+وإصلاح+التكييف"
+                  src="/build3.jpg"
                   alt="خدمات صيانة وإصلاح أنظمة التكييف"
                   width={400}
                   height={200}
@@ -107,7 +86,7 @@ export default function HVACPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=تركيب+أنظمة+التكييف"
+                  src="/build4.jpg"
                   alt="تركيب أنظمة التكييف المركزي الاحترافي"
                   width={400}
                   height={200}
@@ -144,7 +123,7 @@ export default function HVACPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=تنظيف+وتعقيم+التكييف"
+                  src="/build5.jpg"
                   alt="تنظيف وتعقيم أنظمة التكييف"
                   width={400}
                   height={200}
@@ -369,6 +348,7 @@ export default function HVACPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </div>
   )
 }
