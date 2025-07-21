@@ -101,28 +101,33 @@ export default function ContactSocialSection() {
 
             <div className="grid grid-cols-2 gap-4">
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
+              <Link href="https://www.facebook.com/profile.php?id=61578166932512" target="_blank">
                 <CardContent className="p-6 text-center">
-                  <Link href="https://www.facebook.com/profile.php?id=61578166932512" target="_blank">
+                  
                   <Facebook className="w-12 h-12 text-blue-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  </Link>
+               
                   <h4 className="font-semibold text-gray-700">فيسبوك</h4>
                   <p className="text-sm text-gray-500 mt-1">تابع أحدث أعمالنا</p>
                 </CardContent>
+                </Link>
               </Card>
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
+              <Link href="https://www.instagram.com/alqawsco?fbclid=IwY2xjawLodQpleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR7Nedp3jv5_J2PU8-8m7cW4GshjqJwLYtMMYUkR_Y6WIjzcqlzCyIEehW6UEA_aem_DkAakpPArmRPIuiD4ybPvA" target="_blank">
                 <CardContent className="p-6 text-center">
-                  <Link href="https://www.instagram.com/alqawsco?fbclid=IwY2xjawLodQpleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR7Nedp3jv5_J2PU8-8m7cW4GshjqJwLYtMMYUkR_Y6WIjzcqlzCyIEehW6UEA_aem_DkAakpPArmRPIuiD4ybPvA" target="_blank">
+                  
                   <Instagram className="w-12 h-12 text-pink-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  </Link>
+                 
                   <h4 className="font-semibold text-gray-700">إنستغرام</h4>
                   <p className="text-sm text-gray-500 mt-1">صور مشاريعنا</p>
                 </CardContent>
+                </Link>
               </Card>
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
+              <Link href="https://www.tiktok.com/@alqawsco?fbclid=IwY2xjawLodMlleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR78lWQyDXCEU30A5wgNYaXRcT51wBlsNr2GeRSJzU4BJCFV0u4QY2Rh39L6Kg_aem_CYo2PiK8c9bJVK0wFOFusA" target="_blank">
                 <CardContent className="p-6 text-center">
-                  <Link href="https://www.tiktok.com/@alqawsco?fbclid=IwY2xjawLodMlleHRuA2FlbQIxMABicmlkETF2U3p3REY2VzR5Q1VFcUowAR78lWQyDXCEU30A5wgNYaXRcT51wBlsNr2GeRSJzU4BJCFV0u4QY2Rh39L6Kg_aem_CYo2PiK8c9bJVK0wFOFusA" target="_blank">
+                  
                   <svg
                     className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform"
                     viewBox="0 0 48 48"
@@ -137,21 +142,24 @@ export default function ContactSocialSection() {
                       />
                     </g>
                   </svg>
-                  </Link>
+                  
                   <h4 className="font-semibold text-gray-700">تيك توك</h4>
                   <p className="text-sm text-gray-500 mt-1">آخر الأخبار</p>
                 </CardContent>
+                </Link>
               </Card>
 
               <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
+              <Link href="https://www.snapchat.com/add/alqawsco?share_id=sg6qwmdMzbc&locale=ar-EG" target="_blank">
                 <CardContent className="p-6 text-center">
-                  <Link href="https://www.snapchat.com/add/alqawsco?share_id=sg6qwmdMzbc&locale=ar-EG" target="_blank">
+                  
                 <Image src="/snapchat.svg" alt="snapchat" width={48} height={48} className="w-12 h-12 text-blue-700 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  </Link>
+                  
                   <h4 className="font-semibold text-gray-700">سناب شات</h4>
                   <p className="text-sm text-gray-500 mt-1">آخر الأخبار</p>
                 </CardContent>
-              </Card>
+                </Link>
+                </Card>
             </div>
 
             {/* Call to Action */}

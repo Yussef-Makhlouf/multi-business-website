@@ -294,60 +294,7 @@ export default function HVACPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <Link href="/" className="flex items-center space-x-reverse space-x-2 mb-4">
-                <div className="w-8 h-8 bg-[#1375bd] rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">ش</span>
-                </div>
-                <span className="text-xl font-bold">شركة الحلول المتكاملة</span>
-              </Link>
-              <p className="text-gray-400 leading-relaxed">خدمات تكييف احترافية يمكنكم الوثوق بها للراحة والكفاءة</p>
-            </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات التكييف</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>صيانة التكييف</li>
-                <li>خدمات التركيب</li>
-                <li>إصلاح الطوارئ</li>
-                <li>تنظيف الأنظمة</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">خدمات أخرى</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="/contracting" className="hover:text-white">
-                    المقاولات والعقارات
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/marketing" className="hover:text-white">
-                    الإعلان والتسويق
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">معلومات التواصل</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>+966 12 123 تكييف</li>
-                <li>hvac@integrated-solutions.sa</li>
-                <li>خدمة طوارئ 24/7</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 شركة الحلول المتكاملة. جميع الحقوق محفوظة.</p>
-          </div>
-        </div>
-      </footer>
       <Footer />
     </div>
   )
