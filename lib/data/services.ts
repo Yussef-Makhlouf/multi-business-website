@@ -78,11 +78,11 @@ export const servicesData = {
     buttonText: "استكشف خدمات الدعاية والإعلان",
     buttonLink: "/marketing",
     images: {
-      main: "/market.jpg",
+      main: "/panel.jpg",
       mainAlt: "خدمات الدعاية والإعلان المتكاملة",
-      small1: "/build2.jpg",
+      small1: "/sticker2.jpg",
       small1Alt: "تصاميم إعلانية احترافية",
-      small2: "/market2.jpg",
+      small2: "/panel2.jpg",
       small2Alt: "شاشات رقمية متطورة",
       small3: "/build1.jpg",
       small3Alt: "حلول إعلانية متطورة"
@@ -118,7 +118,7 @@ export const bannerData = [
     description: "نقدم خدمات دعاية وإعلان متكاملة تشمل الطباعة والكلادينج واللافتات والشاشات الرقمية، مع ضمان الجودة العالية والأسعار المنافسة",
     buttonText: "استكشف خدمات الدعاية والإعلان",
     buttonLink: "/marketing",
-    imageSrc: "/market.jpg",
+    imageSrc: "/screen.jpg",
     imageAlt: "خدمات دعاية وإعلان متكاملة",
     backgroundColor: "bg-white"
   }

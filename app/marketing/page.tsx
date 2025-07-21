@@ -48,7 +48,7 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/market2.jpg"
+                  src="/mart1.png"
                   alt="طباعة بنرات احترافية عالية الجودة"
                   width={400}
                   height={200}
@@ -85,7 +85,7 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/market3.jpg"
+                  src="/panel2.jpg"
                   alt="خدمات كلادينج خارجي وداخلي متطور"
                   width={400}
                   height={200}
@@ -122,7 +122,7 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/market4.jpg"
+                  src="/screen.jpg"
                   alt="شاشات رقمية متطورة في المستشفيات والمراكز الطبية"
                   width={400}
                   height={200}
@@ -159,7 +159,7 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/market5.jpg"
+                  src="/panel.jpg"
                   alt="لافتات إعلانية جذابة ومبتكرة"
                   width={400}
                   height={200}
@@ -196,7 +196,7 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/market6.jpg"
+                  src="/mart6.jpg"
                   alt="حروف بارزة ثلاثية الأبعاد احترافية"
                   width={400}
                   height={200}
@@ -233,11 +233,11 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                    src="/market7.jpg"
+                    src="/sticker.jpg"
                   alt="استيكرات مخصصة ومقاومة عالية الجودة"
                   width={400}
                   height={200}
-                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-40 sm:h-48 object-contain rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
