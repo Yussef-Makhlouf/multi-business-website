@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Play, Star, CheckCircle, Phone, MessageCircle, Award, Users, Clock } from "lucide-react"
+import {  Play, Star, CheckCircle, Phone, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -46,14 +46,14 @@ export default function HeroSection() {
               
               {/* Services Description */}
               <div className="text-2xl lg:text-3xl text-gray-700 font-medium">
-                في <span className="text-[#1375bd] font-bold">خدمات التكييف والمقاولات والتسويق الرقمي</span>
+                في <span className="text-[#1375bd] font-bold">خدمات التكييف والمقاولات والدعايه والاعلان والتسويق</span>
               </div>
             </div>
 
             {/* Description */}
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              نقدم حلولاً شاملة ومتخصصة في مجالات التكييف والمقاولات والتسويق الرقمي. 
-              خبرة أكثر من 10 سنوات في خدمة عملائنا الكرام في جميع أنحاء المملكة العربية السعودية.
+              نقدم حلولاً شاملة ومتخصصة في مجالات التكييف والمقاولات والدعايه والاعلان والتسويق. 
+               نقدم خدماتنا  في جميع أنحاء المملكة العربية السعودية.
             </p>
 
             {/* Features Grid */}
@@ -149,7 +149,7 @@ export default function HeroSection() {
                   <div className="w-8 h-8 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-full flex items-center justify-center">
                     <span className="text-white text-xs">📱</span>
                   </div>
-                  <span className="text-sm font-semibold text-gray-700">التسويق</span>
+                  <span className="text-sm font-semibold text-gray-700">الدعايه والاعلان والتسويق</span>
                 </div>
               </div>
 

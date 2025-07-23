@@ -7,7 +7,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function ContactSocialSection() {
-  const phoneNumbers = ["0559811925", "0534363845", "0562939917"]
+  const phoneNumbers = ["0559811925"]
 
   const handleWhatsApp = (number: string) => {
     const message = encodeURIComponent("مرحباً، أود الاستفسار عن خدماتكم")
@@ -90,7 +90,7 @@ export default function ContactSocialSection() {
                   <Mail className="w-6 h-6 text-[#1375bd] ml-3" />
                   <h4 className="text-lg font-semibold text-[#1375bd]">البريد الإلكتروني</h4>
                 </div>
-                <p className="text-gray-700">info@alqousalmasi.com</p>
+                <p className="text-gray-700">info@alqawsco.com</p>
               </CardContent>
             </Card>
           </div>

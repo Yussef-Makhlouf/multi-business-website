@@ -113,12 +113,12 @@ export const bannerData = [
     reverse: true
   },
   {
-    title: "خدمات الدعاية والإعلان المتكاملة",
+    title: "خدمات الدعاية والإعلان و التسويق المتكاملة",
     subtitle: "حلول إعلانية شاملة بجودة عالية وأسعار منافسة",
     description: "نقدم خدمات دعاية وإعلان متكاملة تشمل الطباعة والكلادينج واللافتات والشاشات الرقمية، مع ضمان الجودة العالية والأسعار المنافسة",
     buttonText: "استكشف خدمات الدعاية والإعلان",
     buttonLink: "/marketing",
-    imageSrc: "/screen.jpg",
+    imageSrc: "/6.png",
     imageAlt: "خدمات دعاية وإعلان متكاملة",
     backgroundColor: "bg-white"
   }

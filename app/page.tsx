@@ -17,6 +17,8 @@ import ServiceSection from "@/components/sections/service-section"
 import WhyChooseUsSection from "@/components/sections/why-choose-us-section"
 import Footer from "@/components/layout/footer"
 import { servicesData, bannerData } from "@/lib/data/services"
+import { ContentCard, ContentCardGrid } from "@/components/ui/content-card"
+import ContentCardsSection from "@/components/sections/content-cards-section"
 
 // Icon mapping
 const iconMap = {
@@ -56,6 +58,32 @@ export default function HomePage() {
         buttonLink={servicesData.hvac.buttonLink}
         backgroundColor="bg-white"
       /> */}
+  {/* Contracting & Real Estate Banner */}
+  <ServiceBanner
+        icon={iconMap[servicesData.contracting.iconName as keyof typeof iconMap]}
+        title={servicesData.contracting.title}
+        subtitle={servicesData.contracting.subtitle}
+        description={servicesData.contracting.description}
+        features={servicesData.contracting.features}
+        buttonText={servicesData.contracting.buttonText}
+        buttonLink={servicesData.contracting.buttonLink}
+        images={servicesData.contracting.images}
+        backgroundColor="bg-[#f3f8fc]"
+        reverse={true}
+      />
+
+      {/* Modern Banner 2 */}
+      <ModernBanner
+        title={bannerData[1].title}
+        subtitle={bannerData[1].subtitle}
+        description={bannerData[1].description}
+        buttonText={bannerData[1].buttonText}
+        buttonLink={bannerData[1].buttonLink}
+        imageSrc={bannerData[1].imageSrc}
+        imageAlt={bannerData[1].imageAlt}
+        backgroundColor={bannerData[1].backgroundColor}
+        reverse={bannerData[1].reverse}
+      />
 
       {/* HVAC Services Banner */}
       <ServiceBanner
@@ -83,33 +111,7 @@ export default function HomePage() {
         backgroundColor={bannerData[0].backgroundColor}
       />
 
-      {/* Contracting & Real Estate Banner */}
-      <ServiceBanner
-        icon={iconMap[servicesData.contracting.iconName as keyof typeof iconMap]}
-        title={servicesData.contracting.title}
-        subtitle={servicesData.contracting.subtitle}
-        description={servicesData.contracting.description}
-        features={servicesData.contracting.features}
-        buttonText={servicesData.contracting.buttonText}
-        buttonLink={servicesData.contracting.buttonLink}
-        images={servicesData.contracting.images}
-        backgroundColor="bg-[#f3f8fc]"
-        reverse={true}
-      />
-
-      {/* Modern Banner 2 */}
-      <ModernBanner
-        title={bannerData[1].title}
-        subtitle={bannerData[1].subtitle}
-        description={bannerData[1].description}
-        buttonText={bannerData[1].buttonText}
-        buttonLink={bannerData[1].buttonLink}
-        imageSrc={bannerData[1].imageSrc}
-        imageAlt={bannerData[1].imageAlt}
-        backgroundColor={bannerData[1].backgroundColor}
-        reverse={bannerData[1].reverse}
-      />
-
+    
       {/* Marketing & Advertising Banner */}
       <ServiceBanner
         icon={iconMap[servicesData.marketing.iconName as keyof typeof iconMap]}
@@ -163,11 +165,11 @@ export default function HomePage() {
         icon={<Star className="w-10 h-10 text-white" />}
         title="القوس الماسي"
         subtitle="شريكك الموثوق في الحلول المتكاملة"
-        description="نفخر بتقديم خدمات متميزة ومتكاملة في ثلاثة مجالات حيوية: صيانة وتركيب أنظمة التكييف المركزي، والمقاولات والاستثمار العقاري، والإعلان والتسويق الرقمي. خبرة سعودية رائدة من قلب مدينة جدة لخدمة المملكة العربية السعودية بأعلى معايير الجودة والاحترافية والابتكار."
+        description="نفخر بتقديم خدمات متميزة ومتكاملة في ثلاثة مجالات حيوية: صيانة وتركيب أنظمة التكييف المركزي، والمقاولات والاستثمار العقاري، والدعايه والاعلان والتسويق. خبرة سعودية رائدة من قلب مدينة جدة لخدمة المملكة العربية السعودية بأعلى معايير الجودة والاحترافية والابتكار."
         features={[
           "صيانة وتركيب المكيفات المركزية",
           "المقاولات والاستثمار العقاري",
-          "الإعلان والتسويق الرقمي",
+          "الدعايه والاعلان والتسويق",
           "خدمة 24/7 طوال أيام الأسبوع"
         ]}
         buttonText="استكشف خدماتنا المتميزة"
@@ -176,7 +178,62 @@ export default function HomePage() {
       />
       {/* Success Partners */}
       {/* <SuccessPartners /> */}
-
+{/* خدمات متنوعة */}
+<ContentCardsSection
+  title="خدماتنا المتميزة"
+  subtitle="حلول شاملة ومتكاملة لجميع احتياجاتكم"
+  cards={[
+    {
+      id: "hvac-1",
+      image: "/3.png",
+      imageAlt: "  فحص شامل للمكيفات المركزية",
+      title: "فحص شامل للمكيفات المركزية",
+      description: "نستطيع فحص المكيفات المركزية بكفاءة و جودة عالية",
+      href: "/hvac"
+    },
+    {
+      id: "contracting-1",
+      image: "/art1.png",
+      imageAlt: "المقاولات والبناء",
+      title: "المقاولات والبناء",
+      description: "مشاريع بناء متطورة تشمل المنازل والمباني التجارية بأحدث التقنيات",
+      href: "/contracting"
+    },
+    {
+      id: "marketing-1",
+      image: "/6.png",
+      imageAlt: "الدعاية والإعلان",
+      title: "الدعاية والإعلان",
+      description: "خدمات دعاية وإعلان متكاملة تشمل الطباعة والكلادينج والشاشات الرقمية",
+      href: "/marketing"
+    },
+    {
+      id: "hvac-2",
+      image: "/4.png",
+      imageAlt: "  مكيفات مركزية بعناية و صيانة",
+      title: "تركيب و صيانة المكيفات المركزية",
+      description: "نستطيع تركيب و صيانة المكيفات المركزية بكفاءة و جودة عالية",
+      href: "/hvac"
+    },
+    {
+      id: "contracting-2",
+      image: "/art2.png",
+      imageAlt: "الاستثمار العقاري",
+      title: "الاستثمار العقاري",
+      description: "استشارات متخصصة في الاستثمار العقاري وتطوير المشاريع العقارية",
+      href: "/contracting"
+    },
+    {
+      id: "marketing-2",
+      image: "/5.png",
+      imageAlt: "الشاشات الرقمية",
+      title: "الشاشات الرقمية",
+      description: "تركيب وإدارة شاشات LED عالية الدقة للعرض الرقمي والإعلانات التفاعلية",
+      href: "/marketing"
+    }
+  ]}
+  cols={3}
+/>  
       {/* Why Choose Us */}
       <WhyChooseUsSection />
 

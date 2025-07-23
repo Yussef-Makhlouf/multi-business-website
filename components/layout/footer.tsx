@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
 
@@ -125,9 +124,8 @@ export default function Footer() {
             <div className="flex items-center space-x-reverse space-x-6">
               <div className="flex space-x-reverse space-x-4">
                 {[
-                  { number: "0559811925", color: "from-[#1375bd] to-[#018bd2]" },
-                  { number: "0534363845", color: "from-emerald-600 to-emerald-500" },
-                  { number: "0562939917", color: "from-purple-600 to-purple-500" }
+                  { number: "0559811925", color: "from-[#1375bd] to-[#018bd2]" }
+                
                 ].map((phone, index) => (
                   <a
                     key={index}

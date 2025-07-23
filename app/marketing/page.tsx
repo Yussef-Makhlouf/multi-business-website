@@ -76,7 +76,7 @@ export default function MarketingPage() {
             </Card>
 
             {/* Cladding Services */}
-            <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
+            {/* <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-[#1375bd] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="w-8 h-8 text-white" />
@@ -110,7 +110,7 @@ export default function MarketingPage() {
                   </li>
                 </ul>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Digital Screens */}
             <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
@@ -224,7 +224,7 @@ export default function MarketingPage() {
             </Card>
 
             {/* Custom Stickers */}
-            <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
+            {/* <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-[#1375bd] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-8 h-8 text-white" />
@@ -258,7 +258,7 @@ export default function MarketingPage() {
                   </li>
                 </ul>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
