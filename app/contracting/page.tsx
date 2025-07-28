@@ -49,7 +49,7 @@ export default function ContractingPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="استشارة استثمارية"
         secondaryButtonLink="/contact"
-        imageSrc="/art1.png"
+        imageSrc="/build.jpg"
         imageAlt="مشاريع البناء والتطوير العقاري"
         badges={["مرخص ومضمون", "تسليم في الوقت", "جودة عالية", "خبرة 10+ سنوات"]}
       />

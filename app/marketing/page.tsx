@@ -22,7 +22,7 @@ export default function MarketingPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="احصل على عرض سعر"
         secondaryButtonLink="/contact"
-        imageSrc="/5.png"
+        imageSrc="/market.jpg"
         imageAlt="خدمات دعاية وإعلان متكاملة وشاشات رقمية"
         badges={["طباعة احترافية", "كلادينج متطور", "شاشات رقمية", "أسعار منافسة"]}
       />

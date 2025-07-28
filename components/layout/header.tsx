@@ -12,8 +12,8 @@ export default function Header() {
 
   const navigationItems = [
     { href: "/", label: "الرئيسية" },
-    { href: "/hvac", label: "خدمات التكييف" },
     { href: "/contracting", label: "المقاولات والعقارات" },
+    { href: "/hvac", label: "خدمات التكييف" },
     { href: "/marketing", label: "الإعلان والتسويق" },
     { href: "/about", label: "من نحن" },
     // { href: "/portfolio", label: "أعمالنا" },
