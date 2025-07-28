@@ -22,7 +22,7 @@ export default function MarketingPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="احصل على عرض سعر"
         secondaryButtonLink="/contact"
-        imageSrc="/market.jpg"
+        imageSrc="/5.png"
         imageAlt="خدمات دعاية وإعلان متكاملة وشاشات رقمية"
         badges={["طباعة احترافية", "كلادينج متطور", "شاشات رقمية", "أسعار منافسة"]}
       />
@@ -38,6 +38,42 @@ export default function MarketingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 ">
+                        {/* Digital Screens */}
+                        <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-[#1375bd] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-xl text-[#1375bd]">شاشات رقمية متطورة</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/screen.jpg"
+                  alt="شاشات رقمية متطورة في المستشفيات والمراكز الطبية"
+                  width={400}
+                  height={200}
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
+                />
+                <ul className="space-y-2 mb-4 text-right">
+                  <li className="flex items-center justify-end" dir="ltr">
+                    <span className="mr-2">شاشات LED عالية الدقة</span>
+                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                  </li>
+                  <li className="flex items-center justify-end" dir="ltr">  
+                    <span className="mr-2">إدارة محتوى ذكية ومتطورة</span>
+                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                  </li>
+                  <li className="flex items-center justify-end" dir="ltr">
+                    <span className="mr-2">تغطية واسعة في المستشفيات</span>
+                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                  </li>
+                  <li className="flex items-center justify-end" dir="ltr">
+                    <span className="mr-2">عرض معلومات طبية وإعلانات تفاعلية</span>
+                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
             {/* Professional Printing */}
             <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
@@ -112,42 +148,7 @@ export default function MarketingPage() {
               </CardContent>
             </Card> */}
 
-            {/* Digital Screens */}
-            <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-[#1375bd] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-xl text-[#1375bd]">شاشات رقمية متطورة</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/screen.jpg"
-                  alt="شاشات رقمية متطورة في المستشفيات والمراكز الطبية"
-                  width={400}
-                  height={200}
-                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4"
-                />
-                <ul className="space-y-2 mb-4 text-right">
-                  <li className="flex items-center justify-end" dir="ltr">
-                    <span className="mr-2">شاشات LED عالية الدقة</span>
-                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
-                  </li>
-                  <li className="flex items-center justify-end" dir="ltr">  
-                    <span className="mr-2">إدارة محتوى ذكية ومتطورة</span>
-                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
-                  </li>
-                  <li className="flex items-center justify-end" dir="ltr">
-                    <span className="mr-2">تغطية واسعة في المستشفيات</span>
-                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
-                  </li>
-                  <li className="flex items-center justify-end" dir="ltr">
-                    <span className="mr-2">عرض معلومات طبية وإعلانات تفاعلية</span>
-                    <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+
 
             {/* Advertising Signs */}
             <Card className="border-2 border-[#018bd2] hover:shadow-xl transition-shadow">

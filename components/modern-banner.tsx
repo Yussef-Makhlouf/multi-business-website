@@ -37,8 +37,8 @@ export default function ModernBanner({
                 <p className="text-lg text-[#018bd2] font-semibold">{subtitle}</p>
               </div>
               <p className="text-gray-700 leading-relaxed text-lg">{description}</p>
-              <Link href={buttonLink}>
-                <Button className="bg-[#1375bd] hover:bg-[#018bd2] text-lg px-8">
+              <Link href={buttonLink} className="py-3">
+                <Button className="bg-[#1375bd] my-6  hover:bg-[#018bd2] text-lg px-8">
                   <ArrowLeft className="ml-2 w-5 h-5" />
                   {buttonText}
                 </Button>
@@ -51,7 +51,7 @@ export default function ModernBanner({
               alt={imageAlt}
               width={300}
               height={400}
-              className="w-full h-80 object-cover shadow-lg shadow-gray-200"
+              className="w-full h-full object-cover shadow-lg shadow-gray-200"
               style={{
                 borderTopLeftRadius: '40px',
                 borderBottomRightRadius: '40px',

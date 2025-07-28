@@ -45,14 +45,14 @@ export default function HeroSection() {
               </h1>
               
               {/* Services Description */}
-              <div className="text-2xl lg:text-3xl text-gray-700 font-medium">
-                في <span className="text-[#1375bd] font-bold">خدمات التكييف والمقاولات والدعايه والاعلان والتسويق</span>
+              <div className="text-2xl lg:text-2xl text-gray-700 font-medium">
+                في <span className="text-[#1375bd] font-semibold">خدمات العقارات والمقاولات والتكييف المركزي والتسويق والدعاية والاعلان</span>
               </div>
             </div>
 
             {/* Description */}
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              نقدم حلولاً شاملة ومتخصصة في مجالات التكييف والمقاولات والدعايه والاعلان والتسويق. 
+              نقدم حلولاً شاملة ومتخصصة في خدمات العقارات والمقاولات والتكييف المركزي والتسويق والدعاية والاعلان. 
                نقدم خدماتنا  في جميع أنحاء المملكة العربية السعودية.
             </p>
 
@@ -84,12 +84,7 @@ export default function HeroSection() {
                   احصل على عرض سعر مجاني
                 </Button>
               </Link>
-              <Link href="/portfolio">
-                <Button size="lg" variant="outline" className="border-2 border-[#1375bd] text-[#1375bd] hover:bg-[#1375bd] hover:text-white text-lg px-8 py-4 shadow-lg transform hover:scale-105 transition-all duration-300">
-                  <Play className="w-5 h-5 ml-2" />
-                  شاهد أعمالنا
-                </Button>
-              </Link>
+
             </div>
 
             {/* Quick Contact */}

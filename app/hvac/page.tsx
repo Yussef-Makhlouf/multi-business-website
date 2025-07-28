@@ -22,7 +22,7 @@ export default function HVACPage() {
         primaryButtonLink="/contact"
         secondaryButtonText="خدمة طوارئ"
         secondaryButtonLink="/contact"
-        imageSrc="/air.jpg"
+        imageSrc="/3.png"
         imageAlt="فني تكييف محترف يعمل على وحدة التكييف المركزي"
         badges={["خدمة 24/7", "فنيون معتمدون", "ضمان شامل", "أسعار تنافسية"]}
       />

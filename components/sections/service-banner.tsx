@@ -24,6 +24,7 @@ interface ServiceBannerProps {
   backgroundColor?: string
   reverse?: boolean
   icon?: React.ReactNode
+  imageLayout?: 'grid' | 'vertical' // إضافة خاصية جديدة للتحكم في تخطيط الصور
 }
 
 export default function ServiceBanner({
@@ -36,7 +37,8 @@ export default function ServiceBanner({
   images,
   backgroundColor = "bg-white",
   reverse = false,
-  icon
+  icon,
+  imageLayout = 'grid'
 }: ServiceBannerProps) {
   return (
     <section className={`py-20 ${backgroundColor} relative overflow-hidden`}>
@@ -119,80 +121,120 @@ export default function ServiceBanner({
               {/* Curved Decorative Element */}
               <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[#1375bd]/10 to-[#018bd2]/10 rounded-full blur-xl"></div>
               
-              {/* 4 Images in Square Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                {/* Image 1 - Main Image */}
-                <div className="relative overflow-hidden shadow-lg" style={{
-                      borderTopLeftRadius: '40px',
-                      borderBottomRightRadius: '40px',
-                    }}>
-                  <img
-                    src={images.main}
-                    alt={images.mainAlt}
-                    className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                    style={{
-                      borderTopLeftRadius: '40px',
-                      borderBottomRightRadius: '40px',
-                    }}
-                  />
-                  {/* Subtle Overlay */}
-                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
-                </div>
-                
-                {/* Image 2 - Small Image 1 */}
-                <div className="relative overflow-hidden shadow-lg" style={{
-                      borderTopRightRadius: '40px',
-                      borderBottomLeftRadius: '40px',
-                    }}>
-                  <img
-                    src={images.small1}
-                    alt={images.small1Alt}
-                    className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                    style={{
-                      borderTopRightRadius: '40px',
-                      borderBottomLeftRadius: '40px',
-                    }}
-                  />
-                  {/* Subtle Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                </div>
-                
-                {/* Image 3 - Small Image 2 */}
-                <div className="relative overflow-hidden shadow-lg" style={{
+              {/* Conditional Image Layout */}
+              {imageLayout === 'vertical' ? (
+                // Vertical Layout - Two Square Images Stacked
+                <div className="space-y-4">
+                  {/* Top Image */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                    borderTopLeftRadius: '40px',
+                    borderBottomRightRadius: '40px',
+                  }}>
+                    <img
+                      src={images.main}
+                      alt={images.mainAlt}
+                      className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
+                        borderTopLeftRadius: '40px',
+                        borderBottomRightRadius: '40px',
+                      }}
+                    />
+                  </div>
+                  
+                  {/* Bottom Image */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                    borderTopRightRadius: '40px',
+                    borderBottomLeftRadius: '40px',
+                  }}>
+                    <img
+                      src={images.small1}
+                      alt={images.small1Alt}
+                      className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
                         borderTopRightRadius: '40px',
                         borderBottomLeftRadius: '40px',
-                    }}>
-                  <img
-                    src={images.small2}
-                    alt={images.small2Alt}
-                    className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                    style={{
-                      borderTopRightRadius: '40px',
-                      borderBottomLeftRadius: '40px',
-                    }}
-                  />
-                  {/* Subtle Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      }}
+                    />
+                    {/* Subtle Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
                 </div>
-                
-                {/* Image 4 - Small Image 3 */}
-                <div className="relative overflow-hidden shadow-lg" style={{
-                            borderTopLeftRadius: '40px',
-                            borderBottomRightRadius: '40px',
-                    }}>
-                  <img
-                    src={images.small3}
-                    alt={images.small3Alt}
-                    className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                    style={{
-                      borderTopLeftRadius: '40px',
-                      borderBottomRightRadius: '40px',
-                    }}
-                  />
-                  {/* Subtle Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              ) : (
+                // Grid Layout - Original 4 Images Grid
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Image 1 - Main Image */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                        borderTopLeftRadius: '40px',
+                        borderBottomRightRadius: '40px',
+                      }}>
+                    <img
+                      src={images.main}
+                      alt={images.mainAlt}
+                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
+                        borderTopLeftRadius: '40px',
+                        borderBottomRightRadius: '40px',
+                      }}
+                    />
+                    {/* Subtle Overlay */}
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
+                  </div>
+                  
+                  {/* Image 2 - Small Image 1 */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                        borderTopRightRadius: '40px',
+                        borderBottomLeftRadius: '40px',
+                      }}>
+                    <img
+                      src={images.small1}
+                      alt={images.small1Alt}
+                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
+                        borderTopRightRadius: '40px',
+                        borderBottomLeftRadius: '40px',
+                      }}
+                    />
+                    {/* Subtle Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
+                  
+                  {/* Image 3 - Small Image 2 */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                          borderTopRightRadius: '40px',
+                          borderBottomLeftRadius: '40px',
+                      }}>
+                    <img
+                      src={images.small2}
+                      alt={images.small2Alt}
+                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
+                        borderTopRightRadius: '40px',
+                        borderBottomLeftRadius: '40px',
+                      }}
+                    />
+                    {/* Subtle Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
+                  
+                  {/* Image 4 - Small Image 3 */}
+                  <div className="relative overflow-hidden shadow-lg" style={{
+                              borderTopLeftRadius: '40px',
+                              borderBottomRightRadius: '40px',
+                      }}>
+                    <img
+                      src={images.small3}
+                      alt={images.small3Alt}
+                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                      style={{
+                        borderTopLeftRadius: '40px',
+                        borderBottomRightRadius: '40px',
+                      }}
+                    />
+                    {/* Subtle Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Decorative Elements */}
               <div className="absolute bottom-4 right-4 flex space-x-reverse space-x-2">

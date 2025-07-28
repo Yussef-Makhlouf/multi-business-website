@@ -83,6 +83,8 @@ export default function HomePage() {
         imageAlt={bannerData[1].imageAlt}
         backgroundColor={bannerData[1].backgroundColor}
         reverse={bannerData[1].reverse}
+ 
+
       />
 
       {/* HVAC Services Banner */}
@@ -124,10 +126,11 @@ export default function HomePage() {
         images={servicesData.marketing.images}
         backgroundColor="bg-[#f3f8fc]"
         reverse={true}
+        imageLayout="vertical"
       />
 
       {/* Modern Banner 3 */}
-      <ModernBanner
+      {/* <ModernBanner
         title={bannerData[2].title}
         subtitle={bannerData[2].subtitle}
         description={bannerData[2].description}
@@ -136,7 +139,7 @@ export default function HomePage() {
         imageSrc={bannerData[2].imageSrc}
         imageAlt={bannerData[2].imageAlt}
         backgroundColor={bannerData[2].backgroundColor}
-      />
+      /> */}
 
       {/* Masonry Gallery Section */}
       {/* <section className="py-20 bg-[#f3f8fc]">
@@ -179,7 +182,7 @@ export default function HomePage() {
       {/* Success Partners */}
       {/* <SuccessPartners /> */}
 {/* خدمات متنوعة */}
-<ContentCardsSection
+{/* <ContentCardsSection
   title="خدماتنا المتميزة"
   subtitle="حلول شاملة ومتكاملة لجميع احتياجاتكم"
   cards={[
@@ -233,7 +236,7 @@ export default function HomePage() {
     }
   ]}
   cols={3}
-/>  
+/>   */}
       {/* Why Choose Us */}
       <WhyChooseUsSection />
 

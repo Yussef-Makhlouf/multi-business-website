@@ -37,8 +37,7 @@ export default function ContactPage() {
               <CardContent>
                 <div className="space-y-2">
                   <p className="text-gray-600 font-semibold">0559811925</p>
-                  <p className="text-gray-600 font-semibold">0534363845</p>
-                  <p className="text-gray-600 font-semibold">0562939917</p>
+          
                 </div>
               </CardContent>
             </Card>
@@ -169,22 +168,13 @@ export default function ContactPage() {
                   <CardTitle className="text-2xl text-[#1375bd] text-center">أرقام الهواتف المتاحة</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid md:grid-cols-3 gap-6">
+                  <div className="grid md:grid-cols-1 gap-6 ">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
                       <Phone className="w-8 h-8 text-[#1375bd] mx-auto mb-2" />
                       <h4 className="font-semibold text-gray-700 mb-1">الخط الرئيسي</h4>
                       <p className="text-lg font-bold text-[#1375bd]">0559811925</p>
                     </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <Phone className="w-8 h-8 text-[#1375bd] mx-auto mb-2" />
-                      <h4 className="font-semibold text-gray-700 mb-1">خط إضافي</h4>
-                      <p className="text-lg font-bold text-[#1375bd]">0534363845</p>
-                    </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <Phone className="w-8 h-8 text-[#1375bd] mx-auto mb-2" />
-                      <h4 className="font-semibold text-gray-700 mb-1">خط إضافي</h4>
-                      <p className="text-lg font-bold text-[#1375bd]">0562939917</p>
-                    </div>
+             
                   </div>
                 </CardContent>
               </Card>

@@ -70,7 +70,7 @@ export default function ServiceHero({
               alt={imageAlt}
               width={600}
               height={500}
-              className="w-full h-96 object-cover rounded-2xl shadow-xl"
+              className="w-full h-full object-cover rounded-2xl shadow-xl"
               style={{
                 borderTopLeftRadius: '40px',
                 borderBottomRightRadius: '40px',
