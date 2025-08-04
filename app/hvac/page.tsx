@@ -33,8 +33,7 @@ export default function HVACPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1375bd] mb-4">خدمات التكييف المركزي</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              حلول شاملة لأنظمة التكييف للعقارات السكنية والتجارية. من الصيانة الدورية إلى إصلاح الطوارئ والتركيبات
-              الجديدة
+              حلول شاملة لأنظمة التكييف للعقارات السكنية والتجارية. من العقود الدورية و الحالات الطارئه للفيلل و المستشفيات و الفنادق و المجمعات التجاريه و المكاتب و المباني الاداريه و المجمعات الحكوميه
             </p>
           </div>
 
@@ -57,7 +56,7 @@ export default function HVACPage() {
                 />
                 <ul className="space-y-2 mb-4 text-right">
                   <li className="flex items-center justify-end" dir="ltr">
-                    <span className="mr-2">جداول صيانة منتظمة</span>
+                    <span className="mr-2">  جداول صيانة منتظمة</span>
                     <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
                   </li>
                   <li className="flex items-center justify-end" dir="ltr">

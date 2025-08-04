@@ -40,20 +40,29 @@ export default function HeroSection() {
                 <span className="text-gray-900 leading-relaxed ">القوس الماسي</span>
                 <br />
                 <span className="bg-gradient-to-r from-[#1375bd] to-[#018bd2] bg-clip-text text-transparent">
-                  شريكك الموثوق
+                  للمقاولات العامة
                 </span>
               </h1>
               
               {/* Services Description */}
               <div className="text-2xl lg:text-2xl text-gray-700 font-medium">
-                في <span className="text-[#1375bd] font-semibold">خدمات العقارات والمقاولات والتكييف المركزي والتسويق والدعاية والاعلان</span>
+                في <span className="text-[#1375bd] font-semibold">خدمات المقاولات العامة.</span>
+              </div>
+              <div className="text-2xl lg:text-2xl text-gray-700 font-medium">
+                 <span className="text-[#1375bd] font-semibold">خدمات العقار.</span>
+              </div>
+              <div className="text-2xl lg:text-2xl text-gray-700 font-medium">
+                 <span className="text-[#1375bd] font-semibold">خدمات تنظيف وتعقيم مجاري الهواء للمكييفات المركزية وتنظيف وتعقيم هود المطابخ.</span>
+              </div>
+              <div className="text-2xl lg:text-2xl text-gray-700 font-medium">
+                 <span className="text-[#1375bd] font-semibold">خدمات التسويق للغير (الدعايه والإعلان).</span>
               </div>
             </div>
 
             {/* Description */}
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              نقدم حلولاً شاملة ومتخصصة في خدمات العقارات والمقاولات والتكييف المركزي والتسويق والدعاية والاعلان. 
-               نقدم خدماتنا  في جميع أنحاء المملكة العربية السعودية.
+              نقدم حلولاً شاملة ومتخصصة في خدمات العقارات والمقاولات والتكييف المركزي والتسويق والدعاية والاعلان. 
+               نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية.
             </p>
 
             {/* Features Grid */}
@@ -64,11 +73,11 @@ export default function HeroSection() {
               </div>
               <div className="flex items-center space-x-reverse space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-gray-700">ضمان شامل</span>
+                <span className="text-gray-700">أسعار منافسة</span>
               </div>
               <div className="flex items-center space-x-reverse space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-gray-700">أسعار منافسة</span>
+                <span className="text-gray-700">ضمان شامل</span>
               </div>
               <div className="flex items-center space-x-reverse space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
@@ -144,7 +153,7 @@ export default function HeroSection() {
                   <div className="w-8 h-8 bg-gradient-to-br from-[#1375bd] to-[#018bd2] rounded-full flex items-center justify-center">
                     <span className="text-white text-xs">📱</span>
                   </div>
-                  <span className="text-sm font-semibold text-gray-700">الدعايه والاعلان والتسويق</span>
+                  <span className="text-sm font-semibold text-gray-700">الدعايه والاعلان والتسويق</span>
                 </div>
               </div>
 
