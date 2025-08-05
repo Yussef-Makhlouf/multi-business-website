@@ -83,8 +83,6 @@ export default function HomePage() {
         imageAlt={bannerData[1].imageAlt}
         backgroundColor={bannerData[1].backgroundColor}
         reverse={bannerData[1].reverse}
- 
-
       />
 
       {/* HVAC Services Banner */}
